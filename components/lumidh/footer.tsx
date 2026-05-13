@@ -7,8 +7,16 @@ const WHATSAPP_NUMBER = "6281231572023";
 
 export function Footer() {
   return (
-    <footer className="bg-[#111111] py-16 md:py-20">
-      <div className="mx-auto max-w-[1280px] px-6 md:px-10 lg:px-16">
+    <footer 
+      className="relative bg-[#111111] py-16 md:py-20 bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('/Screenshot 2026-05-13 103048.png')"
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#111111]/70" />
+      
+      <div className="relative mx-auto max-w-[1280px] px-6 md:px-10 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

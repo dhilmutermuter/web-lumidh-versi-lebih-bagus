@@ -6,20 +6,17 @@ const parfumeProducts = [
   {
     title: "Oud Wood Essence",
     description: "Deep, warm, and captivating",
-    image:
-      "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800&auto=format&fit=crop",
+    name: "Star Venus",
   },
   {
     title: "Velvet Rose",
     description: "Soft, romantic, and timeless",
-    image:
-      "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?q=80&w=800&auto=format&fit=crop",
+    name: "Night Dance",
   },
   {
     title: "Citrus Breeze",
     description: "Fresh, vibrant, and uplifting",
-    image:
-      "https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=800&auto=format&fit=crop",
+    name: "Skies on the Floor",
   },
 ];
 
@@ -52,12 +49,17 @@ export function ParfumeSection() {
               className="group text-center"
             >
               {/* Image Container */}
-              <div className="relative aspect-square overflow-hidden mx-auto max-w-[320px]">
-                <motion.img
-                  src={product.image}
-                  alt={product.title}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                />
+              <div className="relative aspect-square overflow-hidden mx-auto max-w-[320px] bg-secondary">
+                <div className="h-full w-full flex items-center justify-center text-center px-4">
+                  <div className="space-y-4">
+                    <p className="font-sans text-sm font-light text-muted-foreground">
+                      {product.description}
+                    </p>
+                    <p className="font-serif text-2xl md:text-3xl tracking-wide text-foreground">
+                      {product.name}
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Content */}
@@ -65,9 +67,6 @@ export function ParfumeSection() {
                 <h3 className="font-serif text-lg md:text-xl tracking-wide text-foreground">
                   {product.title}
                 </h3>
-                <p className="font-sans text-sm font-light text-muted-foreground">
-                  {product.description}
-                </p>
                 <a
                   href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi Lumidh, I am interested in ${encodeURIComponent(product.title)}`}
                   target="_blank"

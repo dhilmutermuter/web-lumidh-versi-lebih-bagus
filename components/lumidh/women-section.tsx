@@ -7,20 +7,17 @@ const womenProducts = [
   {
     title: "Silk Evening Dress",
     material: "Pure Mulberry Silk",
-    image:
-      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop",
+    image: "/outfit wmn 1.jpg",
   },
   {
     title: "Tailored Wool Coat",
     material: "Virgin Merino Wool",
-    image:
-      "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=800&auto=format&fit=crop",
+    image: "/outfit wmn 2.jpg",
   },
   {
     title: "Pleated Midi Skirt",
     material: "Japanese Crepe Fabric",
-    image:
-      "https://images.unsplash.com/photo-1583496661160-fb5886a0uj4c?q=80&w=800&auto=format&fit=crop",
+    image: "/outfit wmn 3.jpg",
   },
 ];
 

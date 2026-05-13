@@ -7,20 +7,17 @@ const menProducts = [
   {
     title: "The Executive Blazer",
     material: "Italian Wool Blend",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+    image: "/outfit 1.jpg",
   },
   {
     title: "Minimalist Linen",
     material: "Premium Belgian Linen",
-    image:
-      "https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=800&auto=format&fit=crop",
+    image: "/outfit 2.jpg",
   },
   {
     title: "Urban Chino",
     material: "Japanese Cotton Twill",
-    image:
-      "https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=800&auto=format&fit=crop",
+    image: "/outfit 3.jpg",
   },
 ];
 

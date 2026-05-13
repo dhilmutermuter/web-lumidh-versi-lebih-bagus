@@ -1,7 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Instagram, Pinterest, Music, ArrowUp } from "lucide-react";
+import { Instagram, ArrowUp } from "lucide-react";
+
+// Custom Pinterest icon
+function PinterestIcon({ size = 18 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M9.5 14.5c-.5 2.5-.5 3.5-.5 4.5" />
+      <path d="M12 10c-1.5 0-2.5 1-2.5 2.5s1 2.5 2.5 2.5 2.5-1 2.5-2.5c0-2-1-4-4-4" />
+    </svg>
+  );
+}
+
+// Custom TikTok icon
+function TikTokIcon({ size = 18 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+    </svg>
+  );
+}
 
 export function Footer() {
   const scrollToTop = () => {
@@ -97,7 +117,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 transition-all duration-300 hover:border-[#C5A059] hover:text-[#C5A059]"
               >
-                <Pinterest size={18} strokeWidth={1.5} />
+                <PinterestIcon size={18} />
               </a>
               <a
                 href="https://tiktok.com"
@@ -105,7 +125,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 transition-all duration-300 hover:border-[#C5A059] hover:text-[#C5A059]"
               >
-                <Music size={18} strokeWidth={1.5} />
+                <TikTokIcon size={18} />
               </a>
             </div>
           </div>

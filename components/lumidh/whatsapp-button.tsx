@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const WHATSAPP_NUMBER = "6281231572023";
-
 export function WhatsAppButton() {
   return (
     <motion.div
@@ -22,7 +20,7 @@ export function WhatsAppButton() {
 
       {/* Button */}
       <a
-        href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi Lumidh, I would like to know more about your collections.`}
+        href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Hi Lumidh, I would like to know more about your collections.`}
         target="_blank"
         rel="noopener noreferrer"
         className="flex h-14 w-14 items-center justify-center bg-[#111111] text-white border border-white/20 transition-all duration-300 hover:bg-white hover:text-[#111111] hover:border-[#111111]"

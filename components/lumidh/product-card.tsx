@@ -12,8 +12,6 @@ interface ProductCardProps {
   index: number;
 }
 
-const WHATSAPP_NUMBER = "6281231572023";
-
 export function ProductCard({
   title,
   material,
@@ -21,7 +19,7 @@ export function ProductCard({
   aspectRatio = "portrait",
   index,
 }: ProductCardProps) {
-  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi Lumidh, I am interested in ${encodeURIComponent(title)}`;
+  const whatsappLink = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Hi Lumidh, I am interested in ${encodeURIComponent(title)}`;
 
   return (
     <motion.div

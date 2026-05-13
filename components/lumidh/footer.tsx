@@ -86,7 +86,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/6281231572023"
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-sans text-sm text-white/60 transition-colors duration-300 hover:text-[#C5A059]"

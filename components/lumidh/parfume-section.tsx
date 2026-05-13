@@ -24,8 +24,6 @@ const parfumeProducts = [
   },
 ];
 
-const WHATSAPP_NUMBER = "6281231572023";
-
 export function ParfumeSection() {
   return (
     <section id="parfume" className="bg-background py-20 md:py-28">
@@ -68,7 +66,7 @@ export function ParfumeSection() {
                   {product.title}
                 </h3>
                 <a
-                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi Lumidh, I am interested in ${encodeURIComponent(product.title)}`}
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Hi Lumidh, I am interested in ${encodeURIComponent(product.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-4 border border-foreground px-8 py-3 font-sans text-xs tracking-[0.15em] uppercase text-foreground transition-all duration-500 hover:bg-foreground hover:text-background"

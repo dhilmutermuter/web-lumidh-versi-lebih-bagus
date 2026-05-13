@@ -1,22 +1,26 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const parfumeProducts = [
   {
     title: "Oud Wood Essence",
     description: "Deep, warm, and captivating",
     name: "Star Venus",
+    image: "/Star Venus.png",
   },
   {
     title: "Velvet Rose",
     description: "Soft, romantic, and timeless",
     name: "Night Dance",
+    image: "/Night Dance.png",
   },
   {
     title: "Citrus Breeze",
     description: "Fresh, vibrant, and uplifting",
     name: "Skies on the Floor",
+    image: "/Skies on The Floor.png",
   },
 ];
 
@@ -50,16 +54,12 @@ export function ParfumeSection() {
             >
               {/* Image Container */}
               <div className="relative aspect-square overflow-hidden mx-auto max-w-[320px] bg-secondary">
-                <div className="h-full w-full flex items-center justify-center text-center px-4">
-                  <div className="space-y-4">
-                    <p className="font-sans text-sm font-light text-muted-foreground">
-                      {product.description}
-                    </p>
-                    <p className="font-serif text-2xl md:text-3xl tracking-wide text-foreground">
-                      {product.name}
-                    </p>
-                  </div>
-                </div>
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover"
+                />
               </div>
 
               {/* Content */}

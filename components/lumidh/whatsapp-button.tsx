@@ -29,7 +29,7 @@ export function WhatsAppButton() {
         aria-label="Chat with Lumidh on WhatsApp"
       >
         <Image
-          src="/logo wa.png"
+          src="/logo-wa.png"
           alt="WhatsApp"
           width={24}
           height={24}

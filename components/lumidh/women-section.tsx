@@ -7,17 +7,17 @@ const womenProducts = [
   {
     title: "Silk Evening Dress",
     material: "Pure Mulberry Silk",
-    image: "/outfit wmn 1.jpg",
+    image: "/outfit-wmn-1.jpg",
   },
   {
     title: "Tailored Wool Coat",
     material: "Virgin Merino Wool",
-    image: "/outfit wmn 2.jpg",
+    image: "/outfit-wmn-2.jpg",
   },
   {
     title: "Pleated Midi Skirt",
     material: "Japanese Crepe Fabric",
-    image: "/outfit wmn 3.jpg",
+    image: "/outfit-wmn-3.jpg",
   },
 ];
 

@@ -10,7 +10,7 @@ export function Footer() {
     <footer 
       className="relative bg-[#111111] py-16 md:py-20 bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('/Screenshot 2026-05-13 103048.png')"
+        backgroundImage: "url('/footer-bg-placeholder.png')"
       }}
     >
       {/* Overlay */}

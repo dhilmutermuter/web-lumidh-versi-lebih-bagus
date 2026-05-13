@@ -7,17 +7,17 @@ const menProducts = [
   {
     title: "The Executive Blazer",
     material: "Italian Wool Blend",
-    image: "/outfit 1.jpg",
+    image: "/outfit1.jpg",
   },
   {
     title: "Minimalist Linen",
     material: "Premium Belgian Linen",
-    image: "/outfit 2.jpg",
+    image: "/outfit2.jpg",
   },
   {
     title: "Urban Chino",
     material: "Japanese Cotton Twill",
-    image: "/outfit 3.jpg",
+    image: "/outfit3.jpg",
   },
 ];
 

@@ -1,0 +1,17 @@
+# Query: instagram
+# ContextLines: 1
+
+3 results - 1 file
+
+components/lumidh/footer.tsx:
+    3  import { motion } from "framer-motion";
+    4: import { Instagram, ArrowUp } from "lucide-react";
+    5  
+
+  106                <a
+  107:                 href="https://www.instagram.com/lumidh.official?igsh=NngwemNqOGI3Nmtz"
+  108                  target="_blank"
+
+  111                >
+  112:                 <Instagram size={18} strokeWidth={1.5} />
+  113                </a>
